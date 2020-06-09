@@ -1,9 +1,14 @@
 {
-  "name": "vue-kanban",
+  "name": "@variant-invest/vue-kanban",
   "version": "1.6.2",
   "description": "A Vue.js project",
   "author": "Brock <brock.reece@croud.co.uk>",
   "main": "src/plugin.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/variant-invest/vue-kanban.git"
+  },
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "scripts": {
     "dev": "node build/dev-server.js",
     "start": "node build/dev-server.js",
