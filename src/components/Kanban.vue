@@ -48,6 +48,10 @@
         type: Object,
         default: null,
       },
+      dragDisabled: {
+        type: Boolean,
+        default: false,
+      },
     },
 
     data() {
@@ -92,6 +96,9 @@
     },
 
     mounted() {
+      if (this.dragDisabled) {
+        return;
+      }
       this.config.accepts = this.config.accepts || this.accepts;
       this.drake = dragula(this.$refs.list, this.config)
       .on('drag', (el, source) => {
